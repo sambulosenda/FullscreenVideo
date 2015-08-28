@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-nav-title>
+        <span class="head-title" >Storys</span>
+  </ion-nav-title>
+<ion-content class="scroll-bg2">
+ <div ng-repeat="story in storys" class="item-image item-image1">
+  <div class="animated zoomIn list-card">
+   <a href="#/tab/storys/{{story.id}}">
+    <img ng-src="{{story.image}}">
+   </a>
+  </div>
+ </div>
+</ion-content>

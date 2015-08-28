@@ -1,0 +1,13 @@
+<ion-view>
+  <ion-nav-title align-title="center">
+        <span class="head-title" >Poems</span>
+ </ion-nav-title>
+<ion-content class="scroll-bg2">
+ <div ng-repeat="album in albums" class="item-image item-image1">
+  <div class="animated zoomIn list-card">
+   <a href="#/tab/albums/{{album.id}}">
+    <img ng-src="{{album.image}}">
+   </a>
+  </div>
+ </div>
+</ion-content>

@@ -1,0 +1,9 @@
+<ion-view view-title="Chats">
+  <ion-content class="scroll-bg2">
+    <ion-list>
+      <ion-item ng-repeat="poem in poems" href="#/tab/chats/{{poem.id}}">
+        <img ng-src="{{poem.image}}">
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

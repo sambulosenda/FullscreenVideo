@@ -1,0 +1,109 @@
+angular.module('starter.services', [])
+.factory('Storys', function() {
+var storys = [{
+    id: 1,
+    image :'img/storys/01.png'
+  },{
+    id: 2,
+    image :'img/storys/02.png'
+  },{
+    id: 3,
+    image :'img/storys/03.png'
+  },{
+    id: 4,
+    image :'img/storys/04.png'
+  },{
+    id: 5,
+    image :'img/storys/05.png'
+  }];
+ return {
+    all: function() {
+      return storys;
+    },
+    get: function(storyId) {
+      for (var i = 0; i < storys.length; i++) {
+        if (storys[i].id === parseInt(storyId)) {
+          return storys[i];
+        }
+      }
+      return null;
+    }
+  };
+})
+.factory('Albums', function() {
+var albums = [{
+    id: 1,
+    image :'img/albums/01.png'
+  },{
+    id: 2,
+    image :'img/albums/02.png'
+  },{
+    id: 3,
+    image :'img/albums/03.png'
+  },{
+    id: 4,
+    image :'img/albums/04.png'
+  },{
+    id: 5,
+    image :'img/albums/05.png'
+  }];
+ return {
+    all: function() {
+      return albums;
+    },
+    get: function(albumId) {
+      for (var i = 0; i < albums.length; i++) {
+        if (albums[i].id === parseInt(albumId)) {
+          return albums[i];
+        }
+      }
+      return null;
+    }
+  };
+})
+.factory('Poems', function() {
+var poems = [{
+    id: 1,
+    image :'img/poems/01.png'
+  }, {
+    id: 2,
+    image:'img/poems/02.png'
+  },{
+    id: 3,
+    image:'img/poems/03.png'
+  }, {
+    id: 4,
+    image:'img/poems/04.png'
+  },{
+    id: 5,
+    image:'img/poems/05.png'
+  },{
+    id: 6,
+    image:'img/poems/06.png'
+  },{
+    id: 7,
+    image:'img/poems/07.png'
+  },{
+    id: 8,
+    image:'img/poems/08.png'
+  },{
+    id: 9,
+    image:'img/poems/09.png'
+  },{
+    id: 10,
+    image:'img/poems/10.png'
+  }];
+ return {
+    all: function() {
+      return poems;
+    },
+    get: function(poemId) {
+      for (var i = 0; i < poems.length; i++) {
+        if (poems[i].id === parseInt(poemId)) {
+          return poems[i];
+        }
+      }
+      return null;
+    }
+  };
+});

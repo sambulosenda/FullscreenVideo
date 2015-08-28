@@ -1,0 +1,11 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Album" hide-nav-bar="true">
+<div class="modal transparent fullscreen-player">
+      <video id="myvideo" ng-src="{{clipSrc}}" class="centerme myvideos" controls="controls" autoplay loop poster="{{bg}}"></video>
+</div>
+</ion-view>
